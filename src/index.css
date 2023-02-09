@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+header,
+footer {
+  padding: 15px;
+  background-color: #003eaa;
+  color: whitesmoke;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+  width: 100vw;
+}
+
+.navbar {
+  width: 30rem;
+  margin: 30px;
+}
+
+.navbar input[type="search"] {
+  width: 30rem;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+}
+
+.lists li a {
+  width: 50px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  background-color: #010e81;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.lists li {
+  list-style: none;
+}
+
+.lists li:hover a {
+  background-color: #048fa1;
+  color: black;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 68vh;
+  overflow-y: scroll;
+}
+
+main .post {
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  border: 2px solid #002e65;
+  border-radius: 5px;
+}
+
+main::-webkit-scrollbar {
+  width: 12px;
+}
+main::-webkit-scrollbar-track {
+  background: #bff3f2;
+}
+main::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid #00356a;
+}
+
+.about,
+.addPost {
+  height: 70vh;
+}
+
+.about {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.post a {
+  text-decoration: none;
+  color: #003eaa;
+}
+
+.post:hover a {
+  text-decoration: underline;
+  color: lightgreen;
+}
+
+.postDetails {
+  height: 33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postDetails article {
+  border: 2px dashed lightseagreen;
+  width: 65%;
+  text-align: center;
+}
+
+.postDetails article h2 {
+  font-size: 2rem;
+}
+
+.postDetails article .postDate {
+  font-weight: bold;
+}
+
+.postDetails article .postBody {
+  margin: 10px;
+  padding: 20px;
+}
+
+.postDetails article .editBtn {
+  background-color: #019508;
+  color: whitesmoke;
+  border: none;
+  margin: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.postDetails article .deleteBtn {
+  background-color: #d00303;
+  color: whitesmoke;
+  border: none;
+  margin: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.postDetails article .deleteBtn:hover,
+.postDetails article .editBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
+.addPost,
+.addPost form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addPost form {
+  background-color: #19c1df;
+  width: 25rem;
+  border-radius: 15px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+}
+
+.addPost form h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.addPost #postTitle,
+#postBody {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+}
+
+.addPost button {
+  border: none;
+  width: 75px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #19c1df;
+  color: antiquewhite;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.addPost button:hover {
+  background-color: #003eaa;
+  color: black;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar input[type="search"] {
+    width: 100%;
+  }
+}

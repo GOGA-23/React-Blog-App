@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "my 2nd post",
+      "datetime": "12 17 2022 9:59:35 PM",
+      "body": "hello world ! updated"
+    },
+    {
+      "id": 3,
+      "title": "new post after context",
+      "datetime": "12 18 2022 8:20:58 AM",
+      "body": "context api added to this blog pages"
+    },
+    {
+      "id": 6,
+      "title": "post ",
+      "datetime": "01 05 2023 8:22:19 AM",
+      "body": "post has been created "
+    },
+    {
+      "id": 13,
+      "title": "Natus ipsum molesti",
+      "datetime": "02 09 2023 8:45:57 AM",
+      "body": "Illo velit in volup"
+    }
+  ]
+}
